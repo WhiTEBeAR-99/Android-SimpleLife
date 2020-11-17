@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="nadeshiko">#DC9FB4</color>
+    <color name="suoh">#8E354A</color>
+    <color name="kuwazome">#64363C</color>
+    <color name="sakura">#FEDFE1</color>
+    <color name="karakurenai">#D0104C</color>
+    <color name="kokiake">#CB1B45</color>
+    <color name="syojyohi">#86473F</color>
+    <color name="ginsyu">#E83015</color>
+    <color name="benihi">#C73E3A</color>
+    <color name="arisyu">#F75C2F</color>
+    <color name="ohni">#FB966E</color>
+    <color name="tokigaracha">#F05E1C</color>
+    <color name="ginnezumi">#DB8E71</color>
+    <color name="hai">#91989F</color>
+    <color name="aisumicha">#828282</color>
+    <color name="binrojizome">#373C38</color>
+    <color name="ro">#3A3226</color>
+    <color name="kuro">#0C0C0C</color>
+    <color name="hatobanezumi">#080808</color>
+    <color name="kuchinashi">#72636E</color>
+    <color name="usuki">#F6C555</color>
+    <color name="ukon">#FAD689</color>
+    <color name="hanaba">#EFBB24</color>
+    <color name="tamago">#F9BF45</color>
+    <color name="darkenough">#292929</color>
+</resources>

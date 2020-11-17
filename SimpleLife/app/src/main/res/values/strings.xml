@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">SimpleLife</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="title_ask_fragment">NHẬT KÝ CÂU HỎI</string>
+    <string name="title_count_down_fragment">ĐẾM NGƯỢC</string>
+    <string name="title_note_fragment">GHI CHÚ</string>
+    <string name="title_plan_fragment">LÊN KẾ HOẠCH</string>
+    <string name="title_setting_fragment">CÀI ĐẶT</string>
+    <string name="title_todo_list_fragment">TODO</string>
+</resources>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkenough"
+    tools:context=".activities.MenuActivity">
+
+    <!--Khoi tao vung phan chia khung hinh-->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_ver_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.12"/>
+    <!--    <androidx.constraintlayout.widget.Guideline-->
+    <!--        android:id="@+id/gl_ver_50"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:orientation="vertical"-->
+    <!--        app:layout_constraintGuide_percent="0.5"/>-->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_hor_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1"/>
+    <!--    <androidx.constraintlayout.widget.Guideline-->
+    <!--        android:id="@+id/gl_hor_50"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:orientation="horizontal"-->
+    <!--        app:layout_constraintGuide_percent="0.5"/>-->
+
+    <!--Dinh hinh vi tri cac menu-->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:scaleType="fitXY"
+        android:src="@drawable/b_name_logo_bar_64"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/gl_ver_10"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageButton
+        android:id="@+id/note_button"
+        android:layout_width="@dimen/_28sdp"
+        android:layout_height="@dimen/_28sdp"
+        android:scaleType="fitCenter"
+        android:background="@color/darkenough"
+        android:src="@drawable/b_note_64"
+        android:contentDescription="note"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="@dimen/_35sdp"
+        app:layout_constraintTop_toBottomOf="@+id/gl_hor_10"
+        app:layout_constraintRight_toRightOf="@+id/gl_ver_10"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+    <ImageButton
+        android:id="@+id/calender_button"
+        android:layout_width="@dimen/_28sdp"
+        android:layout_height="@dimen/_28sdp"
+        android:scaleType="fitCenter"
+        android:background="@color/darkenough"
+        android:src="@drawable/b_plan_calendar_64"
+        android:contentDescription="planner"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="@dimen/_18sdp"
+        app:layout_constraintTop_toBottomOf="@+id/note_button"
+        app:layout_constraintRight_toRightOf="@+id/gl_ver_10"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+    <ImageButton
+        android:id="@+id/todo_button"
+        android:layout_width="@dimen/_28sdp"
+        android:layout_height="@dimen/_28sdp"
+        android:scaleType="fitCenter"
+        android:background="@color/darkenough"
+        android:src="@drawable/b_todo_list_64"
+        android:contentDescription="todo_list"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="@dimen/_18sdp"
+        app:layout_constraintTop_toBottomOf="@+id/calender_button"
+        app:layout_constraintRight_toRightOf="@+id/gl_ver_10"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+    <ImageButton
+        android:id="@+id/countdown_anniversary_button"
+        android:layout_width="@dimen/_28sdp"
+        android:layout_height="@dimen/_28sdp"
+        android:scaleType="fitCenter"
+        android:background="@color/darkenough"
+        android:src="@drawable/b_dday_today_64"
+        android:contentDescription="countdown"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="@dimen/_18sdp"
+        app:layout_constraintTop_toBottomOf="@+id/todo_button"
+        app:layout_constraintRight_toRightOf="@+id/gl_ver_10"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+    <ImageButton
+        android:id="@+id/ask_button"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:scaleType="fitCenter"
+        android:background="@color/darkenough"
+        android:src="@drawable/b_ask_64"
+        android:contentDescription="ask"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="@dimen/_18sdp"
+        app:layout_constraintTop_toBottomOf="@+id/countdown_anniversary_button"
+        app:layout_constraintRight_toRightOf="@+id/gl_ver_10"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+    <ImageButton
+        android:id="@+id/setting_button"
+        android:layout_width="@dimen/_28sdp"
+        android:layout_height="@dimen/_28sdp"
+        android:scaleType="fitCenter"
+        android:background="@color/darkenough"
+        android:src="@drawable/b_setting_64"
+        android:contentDescription="setting"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="@dimen/_18sdp"
+        app:layout_constraintTop_toBottomOf="@+id/ask_button"
+        app:layout_constraintRight_toRightOf="@+id/gl_ver_10"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+    <!--Ve duong thang-->
+    <View
+        android:id="@+id/ver_line"
+        android:layout_width="@dimen/_2sdp"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:ignore="MissingConstraints"
+        android:layout_marginLeft="@dimen/_5sdp"
+        app:layout_constraintLeft_toLeftOf="@id/gl_ver_10"/>
+
+    <FrameLayout
+        android:id="@+id/container_fragment"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        tools:ignore="MissingClass,MissingConstraints"
+        android:layout_marginLeft="@dimen/_20sdp"
+        app:layout_constraintLeft_toLeftOf="@id/gl_ver_10"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_weight="3"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

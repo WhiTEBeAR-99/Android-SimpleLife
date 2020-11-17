@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.NewNoteActivity"
+    android:background="@color/darkenough">
+
+    <!--Khoi tao vung phan chia khung hinh-->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_ver_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.12"/>
+    <!--    <androidx.constraintlayout.widget.Guideline-->
+    <!--        android:id="@+id/gl_ver_50"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:orientation="vertical"-->
+    <!--        app:layout_constraintGuide_percent="0.5"/>-->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gl_hor_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1"/>
+    <!--    <androidx.constraintlayout.widget.Guideline-->
+    <!--        android:id="@+id/gl_hor_50"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:orientation="horizontal"-->
+    <!--        app:layout_constraintGuide_percent="0.5"/>-->
+
+    <ImageButton
+        android:id="@+id/back_button"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:scaleType="fitXY"
+        android:src="@drawable/b_back_64"
+        android:background="@color/darkenough"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="@dimen/_8sdp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/gl_ver_10"/>
+
+    <ImageButton
+        android:id="@+id/save_button"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:scaleType="fitXY"
+        android:src="@drawable/b_checkmark_64"
+        android:background="@color/darkenough"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="@dimen/_8sdp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/get_date_time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginLeft="@dimen/_10sdp"
+        app:layout_constraintLeft_toRightOf="@+id/back_button"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <EditText
+        android:id="@+id/title_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Tiêu đề..."
+        android:background="@null"
+        android:fontFamily="@font/averia_libre_light"
+        android:backgroundTint="@color/white"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="@dimen/_20ssp"
+        tools:ignore="MissingConstraints"
+        android:layout_marginLeft="@dimen/_5sdp"
+        app:layout_constraintRight_toLeftOf="@+id/gl_ver_10"
+        app:layout_constraintTop_toBottomOf="@+id/gl_hor_10"/>
+
+    <EditText
+        android:id="@+id/content_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Nội dung..."
+        android:background="@null"
+        android:fontFamily="@font/averia_libre_light"
+        android:backgroundTint="@color/white"
+        android:textStyle="normal"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginLeft="@dimen/_5sdp"
+        app:layout_constraintTop_toBottomOf="@+id/title_et"
+        app:layout_constraintRight_toLeftOf="@+id/gl_ver_10"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
