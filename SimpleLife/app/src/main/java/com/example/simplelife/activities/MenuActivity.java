@@ -1,8 +1,10 @@
 package com.example.simplelife.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -105,5 +107,15 @@ public class MenuActivity extends AppCompatActivity {
 
         //Log ra console cua Dev
         Log.d("MY_MENU", "Menu app is showing... wait for user choosen");
+    }
+
+    //Vi trong fragmentNote khong goi duoc onActivityResult nen se goi o main parent,
+    //roi sau do tu cac fragment co the goi duoc method nay
+    @Override
+    public void onActivityResult (int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        for (Fragment fragment : getSupportFragmentManager().getFragments()) {
+            fragment.onActivityResult(requestCode, resultCode, data);
+        }
     }
 }

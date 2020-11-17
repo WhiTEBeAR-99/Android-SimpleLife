@@ -19,15 +19,16 @@
         android:includeFontPadding="false"
         android:fontFamily="@font/averia_libre_light"
         android:textColor="@color/white"
-        android:textSize="@dimen/_14ssp"
+        android:textSize="@dimen/_12ssp"
         android:textStyle="bold"/>
     <TextView
         android:id="@+id/textDateTime"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
         android:layout_marginStart="@dimen/_8sdp"
-        android:layout_marginTop="@dimen/_8sdp"
         android:layout_marginEnd="@dimen/_8sdp"
+        android:layout_marginBottom="@dimen/_8sdp"
         android:includeFontPadding="false"
         android:fontFamily="@font/averia_libre_light"
         android:textColor="@color/white"

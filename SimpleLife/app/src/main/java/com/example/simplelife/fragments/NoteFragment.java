@@ -25,6 +25,8 @@ import com.example.simplelife.entities.Note;
 import java.util.ArrayList;
 import java.util.List;
 
+import static android.app.Activity.RESULT_OK;
+
 /**
  * A simple {@link Fragment} subclass.
  * Use the {@link NoteFragment#newInstance} factory method to
@@ -119,4 +121,12 @@ public class NoteFragment extends Fragment {
         new GetNoteTask().execute();
     }
 
+    //Dung de add ngay lap tuc note vua moi tao vao UI cua NoteFragment
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == REQUEST_CODE_ADD_NOTE && resultCode == RESULT_OK) {
+            getNote();
+        }
+    }
 }
