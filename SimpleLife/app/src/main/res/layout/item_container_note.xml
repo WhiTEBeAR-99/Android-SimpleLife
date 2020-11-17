@@ -17,22 +17,20 @@
         android:layout_marginTop="@dimen/_8sdp"
         android:layout_marginEnd="@dimen/_8sdp"
         android:includeFontPadding="false"
-        android:fontFamily="@font/amita"
-        android:textColor="@color/black"
-        android:textSize="@dimen/_18ssp"
-        android:textStyle="bold"
-        android:text="hhahsahs"/>
+        android:fontFamily="@font/averia_libre_light"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14ssp"
+        android:textStyle="bold"/>
     <TextView
-        android:id="@+id/textContent"
+        android:id="@+id/textDateTime"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/_8sdp"
         android:layout_marginTop="@dimen/_8sdp"
         android:layout_marginEnd="@dimen/_8sdp"
         android:includeFontPadding="false"
-        android:fontFamily="@font/amita"
-        android:textColor="@color/black"
-        android:textSize="@dimen/_18ssp"
-        android:textStyle="bold"
-        android:text="hhahsahs"/>
+        android:fontFamily="@font/averia_libre_light"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_10ssp"
+        android:textStyle="italic"/>
 </LinearLayout>
