@@ -23,6 +23,10 @@ public class Note implements Serializable {
 
     @ColumnInfo(name = "note_text")
     private String noteText;
+
+//    @ColumnInfo(name = "image_path")
+//    private String imagePath;
+
     //Your code end here
 
     public int getId() {
@@ -56,6 +60,14 @@ public class Note implements Serializable {
     public void setNoteText(String noteText) {
         this.noteText = noteText;
     }
+
+//    public String getImagePath() {
+//        return imagePath;
+//    }
+//
+//    public void setImagePath(String imagePath) {
+//        this.imagePath = imagePath;
+//    }
 
     @Nullable
     @Override

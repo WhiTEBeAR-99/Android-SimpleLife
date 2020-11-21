@@ -14,12 +14,10 @@
         android:layout_marginBottom="@dimen/_40sdp"
         android:clipToPadding="false"
         android:paddingBottom="@dimen/_10sdp">
- 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:animateLayoutChanges="true">
-
             <!--Khoi tao vung phan chia khung hinh-->
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/gl_ver_10"
@@ -58,7 +56,6 @@
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintRight_toLeftOf="@+id/gl_ver_10"/>
-
             <ImageButton
                 android:id="@+id/save_button"
                 android:layout_width="@dimen/_25sdp"
@@ -68,21 +65,19 @@
                 android:background="@color/darkenough"
                 tools:ignore="MissingConstraints"
                 android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginRight="@dimen/_10sdp"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintRight_toRightOf="parent"/>
-
             <TextView
                 android:id="@+id/get_date_time_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/white"
                 tools:ignore="MissingConstraints"
-                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_10sdp"
                 app:layout_constraintLeft_toRightOf="@+id/back_button"
                 app:layout_constraintRight_toLeftOf="@+id/save_button"
                 app:layout_constraintTop_toTopOf="parent"/>
-
-
             <EditText
                 android:id="@+id/title_et"
                 android:layout_width="match_parent"
@@ -98,9 +93,20 @@
                 android:textSize="@dimen/_20ssp"
                 tools:ignore="MissingConstraints"
                 android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_10sdp"
                 app:layout_constraintRight_toLeftOf="@+id/gl_ver_10"
                 app:layout_constraintTop_toBottomOf="@+id/gl_hor_10"/>
-
+<!--            <ImageView-->
+<!--                android:id="@+id/imageNote"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                tools:ignore="MissingConstraints"-->
+<!--                android:layout_marginStart="@dimen/_12sdp"-->
+<!--                android:layout_marginTop="@dimen/_15sdp"-->
+<!--                android:layout_marginEnd="@dimen/_12sdp"-->
+<!--                android:adjustViewBounds="true"-->
+<!--                android:visibility="gone"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/title_et"/>-->
             <EditText
                 android:id="@+id/content_et"
                 android:layout_width="match_parent"
@@ -121,6 +127,37 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 
-    <include layout="@layout/layout_miscellaneous"/>
+    <LinearLayout
+        android:id="@+id/layoutDeleteNote"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        tools:ignore="UserCompoundDrawables">
 
+        <ImageView
+            android:layout_width="@dimen/_28sdp"
+            android:layout_height="@dimen/_28sdp"
+            android:background="@color/darkenough"
+            android:scaleType="fitCenter"
+            android:src="@drawable/b_delete_bin_64"
+            android:tint="@color/redenough"
+            tools:ignore="UseAppTint" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/amita"
+            android:includeFontPadding="false"
+            android:text="Xoá"
+            android:textColor="@color/redenough"
+            android:textSize="@dimen/_12ssp" />
+    </LinearLayout>
+
+<!--    <include layout="@layout/layout_miscellaneous"/>-->
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

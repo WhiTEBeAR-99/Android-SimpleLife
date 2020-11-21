@@ -56,7 +56,7 @@
         android:src="@drawable/b_plus_64"
         android:background="@color/darkenough"
         tools:ignore="MissingConstraints"
-        android:layout_marginBottom="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_15sdp"
         android:layout_marginRight="@dimen/_5sdp"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="@id/gl_hor_10"

@@ -3,20 +3,124 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:background="@drawable/background_miscellaneous"
     android:orientation="vertical"
     app:behavior_peekHeight="@dimen/_40sdp"
-    app:layout_behavior="@string/bottom_sheet_behavior">
+    app:layout_behavior="@string/bottom_sheet_behavior"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <TextView
         android:id="@+id/textMiscellaneous"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_40sdp"
+        android:layout_height="@dimen/_30sdp"
         android:gravity="center"
         android:includeFontPadding="false"
-        android:text="Tuỳ chọn khác"
+        android:fontFamily="@font/amita"
+        android:text="Khác"
         android:textColor="@color/white"
         android:textSize="@dimen/_13ssp"/>
 
+<!--    <LinearLayout-->
+<!--        android:id="@+id/layoutAddImage"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:gravity="center_vertical"-->
+<!--        android:orientation="horizontal"-->
+<!--        tools:ignore="UserCompoundDrawables">-->
+<!--        <ImageButton-->
+<!--            android:id="@+id/gallery_btn"-->
+<!--            android:layout_width="@dimen/_28sdp"-->
+<!--            android:layout_height="@dimen/_28sdp"-->
+<!--            android:scaleType="fitCenter"-->
+<!--            android:background="@color/darkenough"-->
+<!--            android:src="@drawable/b_photo_gallery_64"/>-->
+<!--        <TextView-->
+<!--            android:id="@+id/gallery_tv"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Hình ảnh"-->
+<!--            android:includeFontPadding="false"-->
+<!--            android:textColor="@color/white"/>-->
+<!--    </LinearLayout>-->
+<!--    <LinearLayout-->
+<!--        android:id="@+id/layoutAddLink"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:gravity="center_vertical"-->
+<!--        android:orientation="horizontal"-->
+<!--        tools:ignore="UserCompoundDrawables">-->
+<!--        <ImageButton-->
+<!--            android:id="@+id/link_btn"-->
+<!--            android:layout_width="@dimen/_28sdp"-->
+<!--            android:layout_height="@dimen/_28sdp"-->
+<!--            android:scaleType="fitCenter"-->
+<!--            android:background="@color/darkenough"-->
+<!--            android:src="@drawable/b_link_64"-->
+<!--            android:layout_marginLeft="@dimen/_5sdp"/>-->
+<!--        <TextView-->
+<!--            android:id="@+id/link_tv"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Link"-->
+<!--            android:includeFontPadding="false"-->
+<!--            android:textColor="@color/white"/>-->
+<!--    </LinearLayout>-->
+
+    <LinearLayout
+        android:id="@+id/layoutUpdateNote"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        tools:ignore="UserCompoundDrawables">
+        <ImageView
+            android:layout_width="@dimen/_28sdp"
+            android:layout_height="@dimen/_28sdp"
+            android:scaleType="fitCenter"
+            android:background="@color/darkenough"
+            android:src="@drawable/b_pen_64"
+            android:tint="@color/white"
+            tools:ignore="UseAppTint" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:fontFamily="@font/amita"
+            android:text="Sửa"
+            android:textSize="@dimen/_12ssp"
+            android:textColor="@color/white"
+            android:includeFontPadding="false"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layoutDeleteNote"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        tools:ignore="UserCompoundDrawables">
+        <ImageView
+            android:layout_width="@dimen/_28sdp"
+            android:layout_height="@dimen/_28sdp"
+            android:scaleType="fitCenter"
+            android:background="@color/darkenough"
+            android:src="@drawable/b_delete_bin_64"
+            android:tint="@color/redenough"
+            tools:ignore="UseAppTint" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/amita"
+            android:text="Xoá"
+            android:textSize="@dimen/_12ssp"
+            android:textColor="@color/redenough"
+            android:includeFontPadding="false"/>
+    </LinearLayout>
 </LinearLayout>
